@@ -23,3 +23,4 @@ resource "aws_instance" "dev" {
           Name = "Prod-Instance"
         }
   }
+  # Day3 configuration
