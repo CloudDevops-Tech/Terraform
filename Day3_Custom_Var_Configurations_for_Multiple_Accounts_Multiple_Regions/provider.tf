@@ -2,6 +2,7 @@ provider "aws" {
    region ="ap-south-1"
     profile ="default"
   }
+  #default=dev
 
     provider "aws" {
     region ="ap-south-2"
