@@ -12,4 +12,5 @@ resource "aws_subnet" "name" {
     Name="Prod Subnet"
   }
   }
-  
+
+   
