@@ -52,7 +52,7 @@ variable "db_engine_version" {
 variable "db_instance_class" {
   description = "RDS instance class"
   type        = string
-  default = ""
+  default = "db.t3.micro"
 }
 
 variable "db_allocated_storage" {
@@ -64,7 +64,7 @@ variable "db_allocated_storage" {
 variable "db_username" {
   description = "Master DB username"
   type        = string
-  default = ""
+  default = "admin"
 }
 
 # variable "parameter_group_name" {

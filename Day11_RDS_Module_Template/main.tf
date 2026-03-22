@@ -34,12 +34,12 @@ resource "aws_db_instance" "default" {
   #parameter_group_name = var.parameter_group_name
 
   backup_retention_period = var.backup_retention_period
-  backup_window           = var.backup_window
+  backup_window = var.backup_window != "" ? var.backup_window : null
 
   #monitoring_interval = var.monitoring_interval
   #monitoring_role_arn = aws_iam_role.rds_monitoring.arn
 
-  maintenance_window  = var.maintenance_window
+  maintenance_window = var.maintenance_window != "" ? var.maintenance_window : null
   deletion_protection = var.deletion_protection
   skip_final_snapshot = var.skip_final_snapshot
 }
