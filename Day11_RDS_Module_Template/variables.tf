@@ -75,7 +75,7 @@ variable "db_username" {
 variable "backup_retention_period" {
   description = "Backup retention in days"
   type        = number
-  default     = 7
+  default     = 1                 #1 for free tier
 }
 
 variable "backup_window" {
